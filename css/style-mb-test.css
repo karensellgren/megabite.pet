@@ -1,0 +1,294 @@
+/* (All Pages) */
+.quicksand-megabite {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: bolder;
+}
+
+/* Body Setting */
+/* (All Pages) */
+body {
+    background-color: #EBEBEB;
+    margin: 8px;
+    padding: 0px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Carousel Images */
+/* Custom class to resize and center carousel images */
+.carousel-img {
+    height: 100%;
+    /* Adjust this value as per your needs */
+    width: 100%;
+    /* Keep width auto to maintain aspect ratio */
+    object-fit: cover;
+    /* Maintain aspect ratio and fit the image within the bounds */
+    display: block;
+    /* Ensures proper block-level centering */
+    border-radius: 15px;
+    /* Round corners*/
+}
+
+/* Carousel Spacing */
+/* Default margin for smaller screens (mobile) */
+.carousel-spacing {
+    margin-bottom: 10px;
+}
+
+/* Carousel Spacing */
+/* For tablets and larger screens (768px and above) */
+@media (min-width:768px) {
+    .carousel-spacing {
+        margin-bottom: 20px
+    }
+}
+
+/* Carousel Spacing */
+/* For desktops and larger screens (1200px and above)*/
+@media (min-width:1200px) {
+    .carousel-spacing {
+        margin-bottom: 25px
+    }
+}
+
+/* Flex container for the carousel and tabs */
+.card {
+    flex: 1;
+    height: 100%;
+}
+
+.carousel-tabs-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* Stack carousel and tabs vertically on small screens */
+    gap: 20px;
+    /* Adds space between the carousel and tabs */
+    margin: 15px;
+}
+
+.row-cols-2.row-cols-md-2.g-4 {
+    padding: 15px 5px 9px 5px;
+}
+
+/* Flex behavior for larger screens (tablet and desktop) */
+@media (min-width: 768px) {
+
+    .carousel-tabs-wrapper {
+        width: 50%;
+        float: left;
+    }
+
+    .row-cols-2.row-cols-md-2.g-4 {
+        width: 50%;
+        float: right;
+    }
+
+    /* Clearfix to handle the float */
+    .clearfix {
+        display: flex;
+        align-items: stretch;
+    }
+}
+
+/* Fix the height of carousel images and cards */
+.carousel-inner,
+.carousel-item,
+.card {
+    height: 100%;
+}
+
+
+/* Cards' Border */
+.card {
+    border-radius: 10px;
+    height: 100%;
+}
+
+/* Cards' Image */
+.card-img-top {
+    border-radius: 10px;
+}
+
+/* Default gutter (space between cards) for smaller screens (mobile) */
+.row {
+    margin-bottom: 0.5rem;
+    --bs-gutter-x: 0.5rem;
+    /* Adjust this value for horizontal space */
+    --bs-gutter-y: 1rem;
+    /* Adjust this value for vertical space */
+}
+
+/* For tablets and larger screens (768px and above) */
+@media (min-width: 768px) {
+    .row {
+        margin-bottom: 1.5rem;
+        --bs-gutter-x: 1.5rem;
+        /* Increase horizontal space */
+        --bs-gutter-y: 2rem;
+        /* Increase vertical space */
+    }
+}
+
+/* For desktops and larger screens (1200px and above) */
+@media (min-width: 1200px) {
+    .row {
+        margin-bottom: 2rem;
+
+        --bs-gutter-x: 2rem;
+        /* Further increase horizontal space */
+        --bs-gutter-y: 2.5rem;
+        /* Further increase vertical space */
+    }
+}
+
+/* Navbar Categories */
+.nav-link {
+    color: #D96A9E;
+}
+
+.nav-item-1 {
+    font-size: x-large;
+}
+
+
+/* Style for the Dog tab button */
+#cat-tab,
+#dog-tab {
+    background-color: #E58EAA;
+    /* Adds a pink background */
+    color: white;
+    /* Ensures the text is visible against the pink background */
+    border: 1px solid #E58EAA;
+    /* Removes the default button border */
+    font-size: x-large;
+    border-radius: 10px;
+    margin-bottom: 1px;
+    margin-right: 10px;
+    font: bolder;
+    text-decoration: none;
+}
+
+#dog-tab.hover {
+    background-color: #e22d66;
+
+}
+
+
+
+
+/* Style for all tab buttons */
+.custom-tab {
+    border-top-left-radius: 15px;
+    /* Rounds the top-left corner */
+    border-top-right-radius: 15px;
+    /* Rounds the top-right corner */
+    border-bottom-left-radius: 0;
+    /* No rounding for the bottom-left corner */
+    border-bottom-right-radius: 0;
+    /* No rounding for the bottom-right corner */
+    border: 1px solid #ccc;
+    /* Adds a light border */
+    padding: 20px 12px 12px 12px;
+    /* Adjusts padding to move the text lower */
+    line-height: 1.2;
+    /* Adjust the spacing between lines of text */
+    display: inline-block;
+    /* Ensures it behaves like a button but allows padding */
+    vertical-align: bottom;
+    /* Moves the text to the bottom */
+    background-color: #E5E4E2;
+    /* Default background color */
+    color: black;
+    /* Default text color */
+}
+
+/* Optional: Customize for active tab */
+.custom-tab.active {
+    background-color: pink;
+    /* Background color for the active tab */
+    color: white;
+    /* Text color for the active tab */
+}
+
+/* Style for all tab content sections */
+.tab-pane {
+    background-color: #E5E4E2;
+    /* Light gray background color */
+    padding: 20px;
+    /* Adds padding inside the content area */
+    border-radius: 15px;
+    /* Rounds the bottom corners */
+    border: 1px solid #ccc;
+    /* Adds a light border around the content */
+    margin-top: -1px;
+    /* Ensures the border aligns with the tab borders */
+    margin-bottom: 10px;
+}
+
+/* Round the search bar corners */
+#exampleDataList {
+    border-radius: 20px;
+    /* Adjust the value to make the corners as round as you'd like */
+    padding: 8px;
+    /* Optional: Add some padding to make the input look better */
+}
+
+/* Remove the search bar border and round corners */
+#exampleDataList {
+    border: none;
+    /* Remove the border */
+    border-radius: 20px;
+    /* Round the corners */
+    padding: 8px;
+    /* Add padding for better spacing */
+}
+
+/* Make the search bar wider for screens bigger than mobile */
+@media (min-width: 768px) {
+    #exampleDataList {
+        width: 400px;
+        /* Adjust the width as needed */
+    }
+}
+
+/* Remove the border from the search button */
+.btn-outline-success {
+    border: none;
+    /* Removes the border */
+}
+
+/* Container for search input and icon */
+.search-container {
+    position: relative;
+    width: 100%;
+    /* Adjust based on the layout */
+}
+
+
+
+/* Search input styling */
+.search-input {
+    padding-left: 35px;
+    /* Add padding to make space for the icon */
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+/* Position the icon inside the input field */
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    /* Position on the left inside the input */
+    transform: translateY(-50%);
+    color: #D96A9E;
+    /* Optional: change the icon color */
+    pointer-events: none;
+    /* Make sure the icon doesn't interfere with typing */
+}
+
+.navbar-toggler:hover {
+    background-color: #EBEBEB;
+}

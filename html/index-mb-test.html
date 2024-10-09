@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Contains metadata not visible on the website -->
+
+<head>
+    <!-- The character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Compatibility older versions Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Proper scaling different devices - responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Website Keywords -->
+    <meta name="keywords"
+        content="Best Pet Products, Pet Product Reviews, Compare Pet Product Prices, Cheap Pet Supplies, Affordable Pet Products, Pet Accessories Price Comparison, Discount Pet Products, Top Pet Products, Pet Food Price Comparison, Pet Toys Comparison, Pet Care Products, Pet Supplies Comparison, Online Pet Product Deals, Pet Product Discounts, Pet Grooming Products Comparison, Pet Health Products, Pet Products Online, Pet Supplies Price Comparison, Best Deals on Pet Products, Pet Product Price Guide">
+
+    <!-- The author of the website -->
+    <meta name="author" content="megaBITE.pet">
+
+    <!-- Website Name, Shown in Browser Tab -->
+    <title>megaBITE.pet</title>
+
+    <!-- Bootstrap Stylesheet CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Website Style -->
+    <link rel="stylesheet" href=../css/style-mb-test.css>
+
+    <!-- Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar-Toggle Menu Top-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+
+            <!-- Toggle Button - Collapsing Navbar-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Brand and Logo -->
+            <a class="navbar-brand mx-auto text-center" href="../html/index-mb.html">
+                <img src="../img/logo.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
+                megaBITE.pet</a>
+
+            <!-- Collapsible Navbar -->
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <!-- Navbar Dog Page -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../html/dogs-mb.html">Dog</a>
+                    </li> <!-- Closes Navbar Dog Page -->
+
+                    <!-- Navbar Cat Page -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../html/cats-mb.html">Cat</a>
+                    </li> <!-- Closes Navbar Cat Page -->
+
+                    <!-- Navbar About Us Page -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../html/about-mb.html">About Us</a>
+                    </li> <!-- Closes Navbar About Us Page -->
+                </ul><!-- Closes navbar-nav -->
+
+                <!-- Search With Suggestions -->
+                <form class="d-flex">
+                    <div class="search-container">
+                        <input class="form-control search-input" list="datalistOptions" id="exampleDataList"
+                            placeholder="Sniff Out Deals">
+                        <span class="search-icon">
+                            <i class="bi bi-search"></i>
+                            <!-- Search Icon -->
+                            <button class="btn btn-outline-success" type="submit"> <i class="bi bi-search"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                </svg>
+                            </button>
+                        </span>
+                        <datalist id="datalistOptions">
+                            <option value="San Francisco">
+                            <option value="New York">
+                            <option value="Seattle">
+                            <option value="Los Angeles">
+                            <option value="Chicago">
+                        </datalist>
+                    </div> <!-- Closes search-container -->
+            </div> <!-- Closes div collapse navbar-collapse -->
+            </form> <!-- Closes the search form -->
+        </div> <!-- Closes div container-fluid -->
+    </nav> <!-- Closes Navbar-Toggle Menu Top -->
+
+    <!-- Carousel and 2 Columns Cards Container -->
+    <div class="clearfix">
+        <!-- Carousel Wrapper -->
+        <div class="carousel-tabs-wrapper">
+            <div id="carouselExampleCaptions" class="carousel slide carousel-spacing">
+
+                <!-- Carousel Indicators (buttons to navigate between slides) -->
+                <div class="carousel-indicators">
+                    <!-- First indicator (active by default) -->
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <!-- Second indicator -->
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <!-- Third indicator -->
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div> <!-- End of carousel-indicators -->
+
+                <!-- Carousel Inner (container for slides) -->
+                <div class="carousel-inner">
+
+                    <!-- First slide (active by default) -->
+                    <div class="carousel-item active">
+                        <!-- Image for first slide -->
+                        <img src="../img/shiba-inu.jpeg" class="d-block w-100 carousel-img mx-auto" alt="...">
+                        <!-- Caption for the first slide -->
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Manually Chosen For You</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div> <!-- End of carousel-caption for first slide -->
+                    </div> <!-- End of first carousel-item -->
+
+                    <!-- Second slide -->
+                    <div class="carousel-item">
+                        <!-- Image for the second slide -->
+                        <img src="../img/pomeranian.jpeg" class="d-block w-100 carousel-img mx-auto" alt="...">
+                        <!-- Caption for the second slide -->
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div> <!-- End of carousel-caption fore the second slide -->
+                    </div> <!-- End of second carousel-item -->
+
+                    <!-- Third slide -->
+                    <div class="carousel-item">
+                        <!-- Image for the third slide -->
+                        <img src="../img/calico.jpeg" class="d-block w-100 carousel-img mx-auto" alt="...">
+                        <!-- Caption for the third slide -->
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div> <!-- End of carousel-caption for third slide -->
+                    </div> <!-- End of third carousel-item -->
+                </div> <!-- End of carousel-inner -->
+
+                <!-- Previous Slide Button -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <!-- Next Slide Button -->
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div> <!-- End of carousel wrapper -->
+        </div><!-- End for carousel-tabs-wrapper-->
+
+        <!-- Row with 2 column on small screens and 2 columns on medium screens and above -->
+        <div class="row row-cols-2 row-cols-md-2 g-4">
+
+            <!-- Column 1 -->
+            <div class="col">
+                <!-- Card with 100% height -->
+                <div class="card h-100">
+                    <!-- Card image -->
+                    <img src="../img/calico.jpeg" class="card-img-top" alt="...">
+
+                    <!-- Card body with title and text -->
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Price.</p>
+                    </div>
+                    <!-- End of card body -->
+
+                    <!-- Card footer with last updated text -->
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Price</small>
+                    </div>
+                    <!-- End of card footer -->
+                </div>
+                <!-- End of card -->
+            </div>
+            <!-- End of column 1 -->
+
+            <!-- Column 2 -->
+            <div class="col">
+                <!-- Card with 100% height -->
+                <div class="card h-100">
+                    <!-- Card image -->
+                    <img src="../img/pomeranian.jpeg" class="card-img-top" alt="...">
+
+                    <!-- Card body with title and text -->
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Price.
+                        </p>
+                    </div>
+                    <!-- End of card body -->
+
+                    <!-- Card footer with last updated text -->
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Price</small>
+                    </div>
+                    <!-- End of card footer -->
+                </div>
+                <!-- End of card -->
+            </div>
+            <!-- End of column 2 -->
+        </div> <!--  Closes row -->
+    </div> <!-- Closes Carousel and 2 Columns Cards Container -->
+
+    <!-- Navigation Tabs Dog -->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+        <!-- Navigation item for the Dog tab -->
+        <li class="nav-item" role="presentation">
+            <!-- Button for the Dog tab, currently disabled -->
+            <button class="nav-link" id="dog-tab" data-bs-toggle="tab" data-bs-target="#dog-tab-pane" type="button"
+                role="tab" aria-controls="dog-tab-pane" aria-selected="false" disabled>
+                Dog
+            </button>
+        </li> <!-- Closes the navigation item for the Dog tab -->
+
+        <!-- Dry Food Tab -->
+        <li class="nav-item" role="presentation">
+            <!-- Button for the Dry Food tab, active by default -->
+            <button class="nav-link active custom-tab" id="dry-food-tab" data-bs-toggle="tab"
+                data-bs-target="#dry-food-tab-pane" type="button" role="tab" aria-controls="dry-food-tab-pane"
+                aria-selected="true">Dry Food</button>
+        </li>
+
+        <!-- Wet Food Tab -->
+        <li class="nav-item" role="presentation">
+            <!-- Button for the Wet Food tab -->
+            <button class="nav-link custom-tab" id="wet-food-tab" data-bs-toggle="tab"
+                data-bs-target="#wet-food-tab-pane" type="button" role="tab" aria-controls="wet-food-tab-pane"
+                aria-selected="false">Wet Food</button>
+        </li>
+
+        <!-- Toys Tab -->
+        <li class="nav-item" role="presentation">
+            <!-- Button for the Toys tab -->
+            <button class="nav-link custom-tab" id="toys-tab" data-bs-toggle="tab" data-bs-target="#toys-tab-pane"
+                type="button" role="tab" aria-controls="toys-tab-pane" aria-selected="false">Toys</button>
+        </li>
+
+        <!-- Supplies Tab -->
+        <li class="nav-item" role="presentation">
+            <!-- Supplies tab button -->
+            <button class="nav-link custom-tab" id="supplies-tab" data-bs-toggle="tab"
+                data-bs-target="#supplies-tab-pane" type="button" role="tab" aria-controls="supplies-tab-pane"
+                aria-selected="false">Supplies</button>
+        </li>
+    </ul> <!-- Closes the navigation tabs ul -->
+
+    <!-- Tab Content Dog -->
+    <div class="tab-content" id="myTabContent">
+        <!-- Content for the Dry Food tab, visible by default -->
+        <div class="tab-pane fade show active" id="dry-food-tab-pane" role="tabpanel" aria-labelledby="dry-food-tab"
+            tabindex="0">
+
+            <!-- Add your content for the Dry Food tab here -->
+            <!-- All 4 Cards -->
+            <div class="row row-cols-2 row-cols-md-4 g-4">
+                <!-- Column 1 -->
+                <div class="col">
+
+                    <!-- Card 1 -->
+                    <div class="card h-100">
+                        <img src="../img/dog-dry-food/dog-dry-food-1.jpeg" class="card-img-top" alt="...">
+
+                        <!-- Card body for Card 1 -->
+                        <div class="card-body">
+                            <h5 class="card-title">Royal Canin</h5>
+                            <p class="card-text">Dog Mini Adult - Dry Food </p>
+                        </div> <!-- Closes .card-body for Card 1 -->
+                        <!-- Card-footer -->
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Cheapest at Arken Zoo: SEK 249.00</small>
+                        </div> <!-- Closes card-footer -->
+                    </div><!-- Closes .card for Card 1 -->
+                </div> <!-- Closes .col for Column 1 -->
+
+                <!-- Column 2 -->
+                <div class="col">
+
+                    <!-- Card 2 -->
+                    <div class="card h-100">
+                        <img src="../img/dog-dry-food/dog-dry-food-2.jpeg" class="card-img-top" alt="...">
+
+                        <!-- Card body for Card 2 -->
+                        <div class="card-body">
+                            <h5 class="card-title">Monster</h5>
+                            <p class="card-text">Dog Adult Small Bites - Dry Food</p>
+                        </div> <!-- Closes .card-body for Card 2 -->
+                        <!-- Card-footer -->
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Cheapest at Arken Zoo: SEK 249.00</small>
+                        </div> <!-- Closes card-footer -->
+                    </div> <!-- Closes .card for Card 2 -->
+                </div> <!-- Closes .col for Column 2 -->
+
+                <!-- Column 3 -->
+                <div class="col">
+
+                    <!-- Card 3 -->
+                    <div class="card h-100">
+                        <img src="../img/dog-dry-food/dog-dry-food-3.jpeg" class="card-img-top" alt="...">
+
+                        <!-- Card body for Card 3 -->
+                        <div class="card-body">
+                            <h5 class="card-title">Brit</h5>
+                            <p class="card-text">Dog Large Breeds Dry Food</p>
+                        </div> <!-- Closes .card-body for Card 3 -->
+                        <!-- Card-footer -->
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Cheapest at Arken Zoo: SEK 249.00</small>
+                        </div> <!-- Closes card-footer -->
+                    </div> <!-- Closes .card for Card 3 -->
+                </div> <!-- Closes .col for Column 3 -->
+
+                <!-- Column 4 -->
+                <div class="col">
+
+                    <!-- Card 4 -->
+                    <div class="card h-100">
+                        <img src="../img/dog-dry-food/dog-dry-food-4.jpeg" class="card-img-top" alt="...">
+                        <!-- Card body for Card 4 -->
+                        <div class="card-body">
+                            <h5 class="card-title">Acana</h5>
+                            <p class="card-text">Adult - Dry Food</p>
+                        </div> <!-- Closes .card-body for Card 4 -->
+                        <!-- Card-footer -->
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Cheapest at Arken Zoo: SEK 249.00</small>
+                        </div> <!-- Closes card-footer -->
+                    </div> <!-- Closes .card for Card 4 -->
+                </div> <!-- Closes .col for Column 4 -->
+            </div> <!-- Closes .row with row-cols-2 row-cols-md-4 g-4 -->
+
+        </div> <!-- Closes the content div for the Dry Food tab -->
+
+        <!-- Content for the Wet Food tab -->
+        <div class="tab-pane fade" id="wet-food-tab-pane" role="tabpanel" aria-labelledby="wet-food-tab" tabindex="0">
+            <!-- Add your content for the Wet Food tab here -->
+            <!-- All 4 Cards -->
+            <div class="row row-cols-2 row-cols-md-4 g-4">
+                <!-- Column 1 -->
+                <div class="col">
+
+                    <!-- Card 1 -->
+                    <div class="card h-100">
+                        <img src="../img/dog-wet-food/dog-wet-food-1.jpeg" class="card-img-top" alt="...">
+
+                        <!-- Card body for Card 1 -->
+                        <div class="card-body">
+                            <h5 class="card-title">Royal Canin</h5>
+                            <p class="card-text">Dog Mini Adult - Dry Food </p>
+                        </div> <!-- Closes .card-body for Card 1 -->
+                        <!-- Card-footer -->
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Cheapest at Arken Zoo: SEK 249.00</small>
+                        </div> <!-- Closes card-footer -->
+                    </div><!-- Closes .card for Card 1 -->
+                </div> <!-- Closes .col for Column 1 -->
+
+                <!-- Column 2 -->
+                <div class="col">
+
+                    <!-- Card 2 -->
+                    <div class="card h-100">
+                        <img src="../img/dog-wet-food/dog-wet-food-2.jpeg" class="card-img-top" alt="...">
+
+                        <!-- Card body for Card 2 -->
+                        <div class="card-body">
+                            <h5 class="card-title">Monster</h5>
+                            <p class="card-text">Dog Adult Small Bites - Dry Food</p>
+                        </div> <!-- Closes .card-body for Card 2 -->
+                        <!-- Card-footer -->
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Cheapest at Arken Zoo: SEK 249.00</small>
+                        </div> <!-- Closes card-footer -->
+                    </div> <!-- Closes .card for Card 2 -->
+                </div> <!-- Closes .col for Column 2 -->
+
+                <!-- Column 3 -->
+                <div class="col">
+
+                    <!-- Card 3 -->
+                    <div class="card h-100">
+                        <img src="../img/dog-wet-food/dog-wet-food-3.jpeg" class="card-img-top" alt="...">
+
+                        <!-- Card body for Card 3 -->
+                        <div class="card-body">
+                            <h5 class="card-title">Brit</h5>
+                            <p class="card-text">Dog Large Breeds Dry Food</p>
+                        </div> <!-- Closes .card-body for Card 3 -->
+                        <!-- Card-footer -->
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Cheapest at Arken Zoo: SEK 249.00</small>
+                        </div> <!-- Closes card-footer -->
+                    </div> <!-- Closes .card for Card 3 -->
+                </div> <!-- Closes .col for Column 3 -->
+
+                <!-- Column 4 -->
+                <div class="col">
+
+                    <!-- Card 4 -->
+                    <div class="card h-100">
+                        <img src="../img/dog-wet-food/dog-wet-food-4.jpeg" class="card-img-top" alt="...">
+                        <!-- Card body for Card 4 -->
+                        <div class="card-body">
+                            <h5 class="card-title">Acana</h5>
+                            <p class="card-text">Adult - Dry Food</p>
+                        </div> <!-- Closes .card-body for Card 4 -->
+                        <!-- Card-footer -->
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Cheapest at Arken Zoo: SEK 249.00</small>
+                        </div> <!-- Closes card-footer -->
+                    </div> <!-- Closes .card for Card 4 -->
+                </div> <!-- Closes .col for Column 4 -->
+            </div> <!-- Closes .row with row-cols-2 row-cols-md-4 g-4 -->
+
+        </div> <!-- Closes the content div for the Wet Food tab -->
+
+        <!-- Content for the Toys tab -->
+        <div class="tab-pane fade" id="toys-tab-pane" role="tabpanel" aria-labelledby="toys-tab" tabindex="0">
+            <!-- Add your content for the Toys tab here -->
+            <!-- All 4 Cards -->
+            <div class="row row-cols-2 row-cols-md-4 g-4">
+                <!-- Column 1 -->
+                <div class="col">
+
+                    <!-- Card 1 -->
+                    <div class="card h-100">
+                        <img src="../img/royal-canin/royal-canin-1.jpeg" class="card-img-top" alt="...">
+
+                        <!-- Card body for Card 1 -->
+                        <div class="card-body">
+                            <h5 class="card-title">Royal Canin</h5>
+                            <p class="card-text">Dog Mini Adult - Dry Food </p>
+                        </div> <!-- Closes .card-body for Card 1 -->
+                        <!-- Card-footer -->
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Cheapest at Arken Zoo: SEK 249.00</small>
+                        </div> <!-- Closes card-footer -->
+                    </div><!-- Closes .card for Card 1 -->
+                </div> <!-- Closes .col for Column 1 -->
+
+                <!-- Column 2 -->
+                <div class="col">
+
+                    <!-- Card 2 -->
+                    <div class="card h-100">
+                        <img src="../img/monster/monster-1.jpg" class="card-img-top" alt="...">
+
+                        <!-- Card body for Card 2 -->
+                        <div class="card-body">
+                            <h5 class="card-title">Monster</h5>
+                            <p class="card-text">Dog Adult Small Bites - Dry Food</p>
+                        </div> <!-- Closes .card-body for Card 2 -->
+                        <!-- Card-footer -->
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Cheapest at Arken Zoo: SEK 249.00</small>
+                        </div> <!-- Closes card-footer -->
+                    </div> <!-- Closes .card for Card 2 -->
+                </div> <!-- Closes .col for Column 2 -->
+
+                <!-- Column 3 -->
+                <div class="col">
+
+                    <!-- Card 3 -->
+                    <div class="card h-100">
+                        <img src="../img/brit/brit-1.jpg" class="card-img-top" alt="...">
+
+                        <!-- Card body for Card 3 -->
+                        <div class="card-body">
+                            <h5 class="card-title">Brit</h5>
+                            <p class="card-text">Dog Large Breeds Dry Food</p>
+                        </div> <!-- Closes .card-body for Card 3 -->
+                        <!-- Card-footer -->
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Cheapest at Arken Zoo: SEK 249.00</small>
+                        </div> <!-- Closes card-footer -->
+                    </div> <!-- Closes .card for Card 3 -->
+                </div> <!-- Closes .col for Column 3 -->
+
+                <!-- Column 4 -->
+                <div class="col">
+
+                    <!-- Card 4 -->
+                    <div class="card h-100">
+                        <img src="../img/acana/acana-1.jpg" class="card-img-top" alt="...">
+                        <!-- Card body for Card 4 -->
+                        <div class="card-body">
+                            <h5 class="card-title">Acana</h5>
+                            <p class="card-text">Adult - Dry Food</p>
+                        </div> <!-- Closes .card-body for Card 4 -->
+                        <!-- Card-footer -->
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Cheapest at Arken Zoo: SEK 249.00</small>
+                        </div> <!-- Closes card-footer -->
+                    </div> <!-- Closes .card for Card 4 -->
+                </div> <!-- Closes .col for Column 4 -->
+            </div> <!-- Closes .row with row-cols-2 row-cols-md-4 g-4 -->
+        </div> <!-- Closes the content div for the Toys tab -->
+
+        <!-- Content for the Supplies tab -->
+        <div class="tab-pane fade" id="supplies-tab-pane" role="tabpanel" aria-labelledby="supplies-tab" tabindex="0">
+            <!-- Add your content for the Supplies tab here (if applicable) -->
+            <!-- All 4 Cards -->
+            <div class="row row-cols-2 row-cols-md-4 g-4">
+                <!-- Column 1 -->
+                <div class="col">
+
+                    <!-- Card 1 -->
+                    <div class="card h-100">
+                        <img src="../img/royal-canin/royal-canin-1.jpeg" class="card-img-top" alt="...">
+
+                        <!-- Card body for Card 1 -->
+                        <div class="card-body">
+                            <h5 class="card-title">Royal Canin</h5>
+                            <p class="card-text">Dog Mini Adult - Dry Food </p>
+                        </div> <!-- Closes .card-body for Card 1 -->
+                        <!-- Card-footer -->
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Cheapest at Arken Zoo: SEK 249.00</small>
+                        </div> <!-- Closes card-footer -->
+                    </div><!-- Closes .card for Card 1 -->
+                </div> <!-- Closes .col for Column 1 -->
+
+                <!-- Column 2 -->
+                <div class="col">
+
+                    <!-- Card 2 -->
+                    <div class="card h-100">
+                        <img src="../img/monster/monster-1.jpg" class="card-img-top" alt="...">
+
+                        <!-- Card body for Card 2 -->
+                        <div class="card-body">
+                            <h5 class="card-title">Monster</h5>
+                            <p class="card-text">Dog Adult Small Bites - Dry Food</p>
+                        </div> <!-- Closes .card-body for Card 2 -->
+                        <!-- Card-footer -->
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Cheapest at Arken Zoo: SEK 249.00</small>
+                        </div> <!-- Closes card-footer -->
+                    </div> <!-- Closes .card for Card 2 -->
+                </div> <!-- Closes .col for Column 2 -->
+
+                <!-- Column 3 -->
+                <div class="col">
+
+                    <!-- Card 3 -->
+                    <div class="card h-100">
+                        <img src="../img/brit/brit-1.jpg" class="card-img-top" alt="...">
+
+                        <!-- Card body for Card 3 -->
+                        <div class="card-body">
+                            <h5 class="card-title">Brit</h5>
+                            <p class="card-text">Dog Large Breeds Dry Food</p>
+                        </div> <!-- Closes .card-body for Card 3 -->
+                        <!-- Card-footer -->
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Cheapest at Arken Zoo: SEK 249.00</small>
+                        </div> <!-- Closes card-footer -->
+                    </div> <!-- Closes .card for Card 3 -->
+                </div> <!-- Closes .col for Column 3 -->
+
+                <!-- Column 4 -->
+                <div class="col">
+
+                    <!-- Card 4 -->
+                    <div class="card h-100">
+                        <img src="../img/acana/acana-1.jpg" class="card-img-top" alt="...">
+                        <!-- Card body for Card 4 -->
+                        <div class="card-body">
+                            <h5 class="card-title">Acana</h5>
+                            <p class="card-text">Adult - Dry Food</p>
+                        </div> <!-- Closes .card-body for Card 4 -->
+                        <!-- Card-footer -->
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Cheapest at Arken Zoo: SEK 249.00</small>
+                        </div> <!-- Closes card-footer -->
+                    </div> <!-- Closes .card for Card 4 -->
+                </div> <!-- Closes .col for Column 4 -->
+            </div> <!-- Closes .row with row-cols-2 row-cols-md-4 g-4 -->
+
+        </div> <!-- Closes the content div for the Supplies tab -->
+    </div> <!-- Closes the overall tab content div -->
+
+    <!-- Navigation Tabs Cat -->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+        <!-- Navigation item for the Dog tab -->
+        <li class="nav-item" role="presentation">
+            <!-- Button for the Dog tab, currently disabled -->
+            <button class="nav-link" id="cat-tab" data-bs-toggle="tab" data-bs-target="#cat-tab-pane" type="button"
+                role="tab" aria-controls="cat-tab-pane" aria-selected="false" disabled>
+                Cat
+            </button>
+        </li> <!-- Closes the navigation item for the Dog tab -->
+
+        <!-- Dry Food Tab -->
+        <li class="nav-item" role="presentation">
+            <!-- Button for the Dry Food tab, active by default -->
+            <button class="nav-link active custom-tab" id="cat-dry-food-tab" data-bs-toggle="tab"
+                data-bs-target="#cat-dry-food-tab-pane" type="button" role="tab" aria-controls="cat-dry-food-tab-pane"
+                aria-selected="true">Dry Food</button>
+        </li>
+
+        <!-- Wet Food Tab -->
+        <li class="nav-item" role="presentation">
+            <!-- Button for the Wet Food tab -->
+            <button class="nav-link custom-tab" id="cat-wet-food-tab" data-bs-toggle="tab"
+                data-bs-target="#cat-wet-food-tab-pane" type="button" role="tab" aria-controls="cat-wet-food-tab-pane"
+                aria-selected="false">Wet Food</button>
+        </li>
+
+        <!-- Toys Tab -->
+        <li class="nav-item" role="presentation">
+            <!-- Button for the Toys tab -->
+            <button class="nav-link custom-tab" id="cat-toys-tab" data-bs-toggle="tab"
+                data-bs-target="#cat-toys-tab-pane" type="button" role="tab" aria-controls="cat-toys-tab-pane"
+                aria-selected="false">Toys</button>
+        </li>
+
+        <!-- Supplies Tab -->
+        <li class="nav-item" role="presentation">
+            <!-- Supplies tab button -->
+            <button class="nav-link custom-tab" id="cat-supplies-tab" data-bs-toggle="tab"
+                data-bs-target="#cat-supplies-tab-pane" type="button" role="tab" aria-controls="cat-supplies-tab-pane"
+                aria-selected="false">Supplies</button>
+        </li>
+    </ul> <!-- Closes the navigation tabs ul -->
+
+    <!-- Tab Content Cat -->
+    <div class="tab-content" id="myTabContent">
+        <!-- Content for the Dry Food tab, visible by default -->
+        <div class="tab-pane fade show active" id="cat-dry-food-tab-pane" role="tabpanel"
+            aria-labelledby="cat-dry-food-tab" tabindex="0">
+
+            <!-- Add your content for the Dry Food tab here -->
+            <!-- All 4 Cards -->
+            <div class="row row-cols-2 row-cols-md-4 g-4">
+                <!-- Column 1 -->
+                <div class="col">
+
+                    <!-- Card 1 -->
+                    <div class="card h-100">
+                        <img src="../img/cat-dry-food/cat-dry-food-1.jpeg" class="card-img-top" alt="...">
+
+                        <!-- Card body for Card 1 -->
+                        <div class="card-body">
+                            <h5 class="card-title">Royal Canin</h5>
+                            <p class="card-text">Cat Mini Adult - Dry Food </p>
+                        </div> <!-- Closes .card-body for Card 1 -->
+                        <!-- Card-footer -->
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Cheapest at Arken Zoo: SEK 249.00</small>
+                        </div> <!-- Closes card-footer -->
+                    </div><!-- Closes .card for Card 1 -->
+                </div> <!-- Closes .col for Column 1 -->
+
+                <!-- Column 2 -->
+                <div class="col">
+
+                    <!-- Card 2 -->
+                    <div class="card h-100">
+                        <img src="../img/cat-dry-food/cat-dry-food-2.jpeg" class="card-img-top" alt="...">
+
+                        <!-- Card body for Card 2 -->
+                        <div class="card-body">
+                            <h5 class="card-title">Monster</h5>
+                            <p class="card-text">Dog Adult Small Bites - Dry Food</p>
+                        </div> <!-- Closes .card-body for Card 2 -->
+                        <!-- Card-footer -->
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Cheapest at Arken Zoo: SEK 249.00</small>
+                        </div> <!-- Closes card-footer -->
+                    </div> <!-- Closes .card for Card 2 -->
+                </div> <!-- Closes .col for Column 2 -->
+
+                <!-- Column 3 -->
+                <div class="col">
+
+                    <!-- Card 3 -->
+                    <div class="card h-100">
+                        <img src="../img/cat-dry-food/cat-dry-food-3.jpeg" class="card-img-top" alt="...">
+
+                        <!-- Card body for Card 3 -->
+                        <div class="card-body">
+                            <h5 class="card-title">Brit</h5>
+                            <p class="card-text">Dog Large Breeds Dry Food</p>
+                        </div> <!-- Closes .card-body for Card 3 -->
+                        <!-- Card-footer -->
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Cheapest at Arken Zoo: SEK 249.00</small>
+                        </div> <!-- Closes card-footer -->
+                    </div> <!-- Closes .card for Card 3 -->
+                </div> <!-- Closes .col for Column 3 -->
+
+                <!-- Column 4 -->
+                <div class="col">
+
+                    <!-- Card 4 -->
+                    <div class="card h-100">
+                        <img src="../img/cat-dry-food/cat-dry-food-4.jpeg" class="card-img-top" alt="...">
+                        <!-- Card body for Card 4 -->
+                        <div class="card-body">
+                            <h5 class="card-title">Acana</h5>
+                            <p class="card-text">Adult - Dry Food</p>
+                        </div> <!-- Closes .card-body for Card 4 -->
+                        <!-- Card-footer -->
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Cheapest at Arken Zoo: SEK 249.00</small>
+                        </div> <!-- Closes card-footer -->
+                    </div> <!-- Closes .card for Card 4 -->
+                </div> <!-- Closes .col for Column 4 -->
+            </div> <!-- Closes .row with row-cols-2 row-cols-md-4 g-4 -->
+
+        </div> <!-- Closes the content div for the Dry Food tab -->
+
+        <!-- Content for the Wet Food tab -->
+        <div class="tab-pane fade" id="cat-wet-food-tab-pane" role="tabpanel" aria-labelledby="cat-wet-food-tab"
+            tabindex="0">
+            <!-- Add your content for the Wet Food tab here -->
+            <!-- All 4 Cards -->
+            <div class="row row-cols-2 row-cols-md-4 g-4">
+                <!-- Column 1 -->
+                <div class="col">
+
+                    <!-- Card 1 -->
+                    <div class="card h-100">
+                        <img src="../img/royal-canin/royal-canin-1.jpeg" class="card-img-top" alt="...">
+
+                        <!-- Card body for Card 1 -->
+                        <div class="card-body">
+                            <h5 class="card-title">Royal Canin</h5>
+                            <p class="card-text">Dog Mini Adult - Dry Food </p>
+                        </div> <!-- Closes .card-body for Card 1 -->
+                        <!-- Card-footer -->
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Cheapest at Arken Zoo: SEK 249.00</small>
+                        </div> <!-- Closes card-footer -->
+                    </div><!-- Closes .card for Card 1 -->
+                </div> <!-- Closes .col for Column 1 -->
+
+                <!-- Column 2 -->
+                <div class="col">
+
+                    <!-- Card 2 -->
+                    <div class="card h-100">
+                        <img src="../img/monster/monster-1.jpg" class="card-img-top" alt="...">
+
+                        <!-- Card body for Card 2 -->
+                        <div class="card-body">
+                            <h5 class="card-title">Monster</h5>
+                            <p class="card-text">Dog Adult Small Bites - Dry Food</p>
+                        </div> <!-- Closes .card-body for Card 2 -->
+                        <!-- Card-footer -->
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Cheapest at Arken Zoo: SEK 249.00</small>
+                        </div> <!-- Closes card-footer -->
+                    </div> <!-- Closes .card for Card 2 -->
+                </div> <!-- Closes .col for Column 2 -->
+
+                <!-- Column 3 -->
+                <div class="col">
+
+                    <!-- Card 3 -->
+                    <div class="card h-100">
+                        <img src="../img/brit/brit-1.jpg" class="card-img-top" alt="...">
+
+                        <!-- Card body for Card 3 -->
+                        <div class="card-body">
+                            <h5 class="card-title">Brit</h5>
+                            <p class="card-text">Dog Large Breeds Dry Food</p>
+                        </div> <!-- Closes .card-body for Card 3 -->
+                        <!-- Card-footer -->
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Cheapest at Arken Zoo: SEK 249.00</small>
+                        </div> <!-- Closes card-footer -->
+                    </div> <!-- Closes .card for Card 3 -->
+                </div> <!-- Closes .col for Column 3 -->
+
+                <!-- Column 4 -->
+                <div class="col">
+
+                    <!-- Card 4 -->
+                    <div class="card h-100">
+                        <img src="../img/acana/acana-1.jpg" class="card-img-top" alt="...">
+                        <!-- Card body for Card 4 -->
+                        <div class="card-body">
+                            <h5 class="card-title">Acana</h5>
+                            <p class="card-text">Adult - Dry Food</p>
+                        </div> <!-- Closes .card-body for Card 4 -->
+                        <!-- Card-footer -->
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Cheapest at Arken Zoo: SEK 249.00</small>
+                        </div> <!-- Closes card-footer -->
+                    </div> <!-- Closes .card for Card 4 -->
+                </div> <!-- Closes .col for Column 4 -->
+            </div> <!-- Closes .row with row-cols-2 row-cols-md-4 g-4 -->
+
+        </div> <!-- Closes the content div for the Wet Food tab -->
+
+        <!-- Content for the Toys tab -->
+        <div class="tab-pane fade" id="cat-toys-tab-pane" role="tabpanel" aria-labelledby="cat-toys-tab" tabindex="0">
+            <!-- Add your content for the Toys tab here -->
+            <!-- All 4 Cards -->
+            <div class="row row-cols-2 row-cols-md-4 g-4">
+                <!-- Column 1 -->
+                <div class="col">
+
+                    <!-- Card 1 -->
+                    <div class="card h-100">
+                        <img src="../img/royal-canin/royal-canin-1.jpeg" class="card-img-top" alt="...">
+
+                        <!-- Card body for Card 1 -->
+                        <div class="card-body">
+                            <h5 class="card-title">Royal Canin</h5>
+                            <p class="card-text">Dog Mini Adult - Dry Food </p>
+                        </div> <!-- Closes .card-body for Card 1 -->
+                        <!-- Card-footer -->
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Cheapest at Arken Zoo: SEK 249.00</small>
+                        </div> <!-- Closes card-footer -->
+                    </div><!-- Closes .card for Card 1 -->
+                </div> <!-- Closes .col for Column 1 -->
+
+                <!-- Column 2 -->
+                <div class="col">
+
+                    <!-- Card 2 -->
+                    <div class="card h-100">
+                        <img src="../img/monster/monster-1.jpg" class="card-img-top" alt="...">
+
+                        <!-- Card body for Card 2 -->
+                        <div class="card-body">
+                            <h5 class="card-title">Monster</h5>
+                            <p class="card-text">Dog Adult Small Bites - Dry Food</p>
+                        </div> <!-- Closes .card-body for Card 2 -->
+                        <!-- Card-footer -->
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Cheapest at Arken Zoo: SEK 249.00</small>
+                        </div> <!-- Closes card-footer -->
+                    </div> <!-- Closes .card for Card 2 -->
+                </div> <!-- Closes .col for Column 2 -->
+
+                <!-- Column 3 -->
+                <div class="col">
+
+                    <!-- Card 3 -->
+                    <div class="card h-100">
+                        <img src="../img/brit/brit-1.jpg" class="card-img-top" alt="...">
+
+                        <!-- Card body for Card 3 -->
+                        <div class="card-body">
+                            <h5 class="card-title">Brit</h5>
+                            <p class="card-text">Dog Large Breeds Dry Food</p>
+                        </div> <!-- Closes .card-body for Card 3 -->
+                        <!-- Card-footer -->
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Cheapest at Arken Zoo: SEK 249.00</small>
+                        </div> <!-- Closes card-footer -->
+                    </div> <!-- Closes .card for Card 3 -->
+                </div> <!-- Closes .col for Column 3 -->
+
+                <!-- Column 4 -->
+                <div class="col">
+
+                    <!-- Card 4 -->
+                    <div class="card h-100">
+                        <img src="../img/acana/acana-1.jpg" class="card-img-top" alt="...">
+                        <!-- Card body for Card 4 -->
+                        <div class="card-body">
+                            <h5 class="card-title">Acana</h5>
+                            <p class="card-text">Adult - Dry Food</p>
+                        </div> <!-- Closes .card-body for Card 4 -->
+                        <!-- Card-footer -->
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Cheapest at Arken Zoo: SEK 249.00</small>
+                        </div> <!-- Closes card-footer -->
+                    </div> <!-- Closes .card for Card 4 -->
+                </div> <!-- Closes .col for Column 4 -->
+            </div> <!-- Closes .row with row-cols-2 row-cols-md-4 g-4 -->
+        </div> <!-- Closes the content div for the Toys tab -->
+
+        <!-- Content for the Supplies tab -->
+        <div class="tab-pane fade" id="cat-supplies-tab-pane" role="tabpanel" aria-labelledby="cat-supplies-tab"
+            tabindex="0">
+            <!-- Add your content for the Supplies tab here (if applicable) -->
+            <!-- All 4 Cards -->
+            <div class="row row-cols-2 row-cols-md-4 g-4">
+                <!-- Column 1 -->
+                <div class="col">
+
+                    <!-- Card 1 -->
+                    <div class="card h-100">
+                        <img src="../img/royal-canin/royal-canin-1.jpeg" class="card-img-top" alt="...">
+
+                        <!-- Card body for Card 1 -->
+                        <div class="card-body">
+                            <h5 class="card-title">Royal Canin</h5>
+                            <p class="card-text">Dog Mini Adult - Dry Food </p>
+                        </div> <!-- Closes .card-body for Card 1 -->
+                        <!-- Card-footer -->
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Cheapest at Arken Zoo: SEK 249.00</small>
+                        </div> <!-- Closes card-footer -->
+                    </div><!-- Closes .card for Card 1 -->
+                </div> <!-- Closes .col for Column 1 -->
+
+                <!-- Column 2 -->
+                <div class="col">
+
+                    <!-- Card 2 -->
+                    <div class="card h-100">
+                        <img src="../img/monster/monster-1.jpg" class="card-img-top" alt="...">
+
+                        <!-- Card body for Card 2 -->
+                        <div class="card-body">
+                            <h5 class="card-title">Monster</h5>
+                            <p class="card-text">Dog Adult Small Bites - Dry Food</p>
+                        </div> <!-- Closes .card-body for Card 2 -->
+                        <!-- Card-footer -->
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Cheapest at Arken Zoo: SEK 249.00</small>
+                        </div> <!-- Closes card-footer -->
+                    </div> <!-- Closes .card for Card 2 -->
+                </div> <!-- Closes .col for Column 2 -->
+
+                <!-- Column 3 -->
+                <div class="col">
+
+                    <!-- Card 3 -->
+                    <div class="card h-100">
+                        <img src="../img/brit/brit-1.jpg" class="card-img-top" alt="...">
+
+                        <!-- Card body for Card 3 -->
+                        <div class="card-body">
+                            <h5 class="card-title">Brit</h5>
+                            <p class="card-text">Dog Large Breeds Dry Food</p>
+                        </div> <!-- Closes .card-body for Card 3 -->
+                        <!-- Card-footer -->
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Cheapest at Arken Zoo: SEK 249.00</small>
+                        </div> <!-- Closes card-footer -->
+                    </div> <!-- Closes .card for Card 3 -->
+                </div> <!-- Closes .col for Column 3 -->
+
+                <!-- Column 4 -->
+                <div class="col">
+
+                    <!-- Card 4 -->
+                    <div class="card h-100">
+                        <img src="../img/acana/acana-1.jpg" class="card-img-top" alt="...">
+                        <!-- Card body for Card 4 -->
+                        <div class="card-body">
+                            <h5 class="card-title">Acana</h5>
+                            <p class="card-text">Adult - Dry Food</p>
+                        </div> <!-- Closes .card-body for Card 4 -->
+                        <!-- Card-footer -->
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Cheapest at Arken Zoo: SEK 249.00</small>
+                        </div> <!-- Closes card-footer -->
+                    </div> <!-- Closes .card for Card 4 -->
+                </div> <!-- Closes .col for Column 4 -->
+            </div> <!-- Closes .row with row-cols-2 row-cols-md-4 g-4 -->
+
+        </div> <!-- Closes the content div for the Supplies tab -->
+    </div> <!-- Closes the overall tab content div -->
+
+
+    <!-- Bootstrap Enabling interactive components like modals, dropdowns, and carousels -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

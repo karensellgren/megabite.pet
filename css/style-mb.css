@@ -1,0 +1,289 @@
+/* (All Pages) */
+.quicksand-megabite {
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: bolder;
+}
+
+.quicksand-megabite,
+body {
+    font-family: "Quicksand", sans-serif;
+}
+
+/* Body Setting */
+/* (All Pages) */
+body {
+    background-color: #EBEBEB;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Carousel Images */
+/* Custom class to resize and center carousel images */
+.carousel-img {
+    height: 100%;
+    /* Adjust this value as per your needs */
+    width: 100%;
+    /* Keep width auto to maintain aspect ratio */
+    object-fit: cover;
+    /* Maintain aspect ratio and fit the image within the bounds */
+    border-radius: 15px;
+    /* Round corners*/
+}
+
+/* Carousel Spacing */
+.carousel-spacing {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+}
+
+/* Carousel Spacing */
+/* For tablets and larger screens (768px and above) */
+@media (min-width:768px) {
+    .carousel-spacing {
+        margin-bottom: 0rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+}
+
+/* Carousel Spacing */
+/* For desktops and larger screens (1200px and above)*/
+@media (min-width:1200px) {
+    .carousel-spacing {
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+}
+
+/* Flex container for the carousel and tabs */
+.card {
+    flex: 1;
+    height: 100%;
+}
+
+
+/* Flex behavior for larger screens (tablet and desktop) */
+@media (min-width: 768px) {
+    .clearfix {
+        display: flex;
+    }
+}
+
+/* Cards' Border and Card's Image*/
+.card {
+    border: none;
+}
+
+.card,
+.card-img-top {
+    border-radius: 15px;
+}
+
+/* Target card-img-top only when inside a card with class text-bg-dark */
+.card.text-bg-dark .card-img-top {
+    height: 100%;
+    object-fit: cover;
+}
+
+.col {
+    object-fit: cover;
+}
+
+/* Carousel Spacing */
+/* Default gutter (space between cards) for smaller screens (mobile) */
+.row {
+    margin-bottom: 0rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    --bs-gutter-x: 0rem;
+    /* Adjust this value for horizontal space */
+    --bs-gutter-y: 0rem;
+    /* Adjust this value for vertical space */
+}
+
+/* Carousel Spacing */
+/* For tablets and larger screens (768px and above) */
+@media (min-width: 768px) {
+    .row {
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        --bs-gutter-x: 0rem;
+        /* Increase horizontal space */
+        --bs-gutter-y: 0rem;
+        /* Increase vertical space */
+    }
+}
+
+/* For desktops and larger screens (1200px and above) */
+@media (min-width: 1200px) {
+    .row {
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+        --bs-gutter-x: 0rem;
+        /* Further increase horizontal space */
+        --bs-gutter-y: 0rem;
+        /* Further increase vertical space */
+    }
+}
+
+/* Navbar Categories */
+.nav-link {
+    color: #D96A9E;
+}
+
+.nav-item-1 {
+    font-size: x-large;
+}
+
+/* Style for the Dog tab button */
+#cat-tab,
+#dog-tab {
+    background-color: #E58EAA;
+    /* Adds a pink background */
+    color: white;
+    /* Ensures the text is visible against the pink background */
+    border: 1px solid #E58EAA;
+    /* Removes the default button border */
+    font-size: x-large;
+    border-radius: 15px;
+    margin-bottom: 0px;
+    --bs-gutter-y: 0rem;
+    --bs-gutter-x: 0rem;
+    margin-right: 25px;
+    font: bolder;
+    text-decoration: none;
+}
+
+#dog-tab.hover {
+    background-color: #e22d66;
+}
+
+/* Style for all tab buttons */
+.custom-tab {
+    border-top-left-radius: 15px;
+    /* Rounds the top-left corner */
+    border-top-right-radius: 15px;
+    /* Rounds the top-right corner */
+    border-bottom-left-radius: 0px;
+    /* No rounding for the bottom-left corner */
+    border-bottom-right-radius: 0px;
+    /* No rounding for the bottom-right corner */
+    border: 1px solid #ccc;
+    /* Adds a light border */
+    padding: 20px 12px 12px 12px;
+    /* Adjusts padding to move the text lower */
+    line-height: 1.2;
+    /* Adjust the spacing between lines of text */
+    display: inline-block;
+    /* Ensures it behaves like a button but allows padding */
+    vertical-align: bottom;
+    /* Moves the text to the bottom */
+    background-color: #E5E4E2;
+    /* Default background color */
+    color: black;
+    /* Default text color */
+}
+
+/* Optional: Customize for active tab */
+.custom-tab.active {
+    background-color: pink;
+    /* Background color for the active tab */
+    color: white;
+    /* Text color for the active tab */
+}
+
+/* Style for all tab content sections */
+.tab-pane {
+    background-color: #E5E4E2;
+    /* Light gray background color */
+    padding: 0px;
+    /* Adds padding inside the content area */
+    border-radius: 15px;
+    /* Rounds the bottom corners */
+    border: 1px solid #ccc;
+    /* Adds a light border around the content */
+    margin-top: 0px;
+    /* Ensures the border aligns with the tab borders */
+    margin-bottom: 0px;
+}
+
+/* Remove the search bar border and round corners */
+#exampleDataList {
+    border: none;
+    /* Remove the border */
+    border-radius: 20px;
+    /* Round the corners */
+    padding: 8px;
+    /* Add padding for better spacing */
+}
+
+/* Make the search bar wider for screens bigger than mobile */
+@media (min-width: 768px) {
+    #exampleDataList {
+        width: 400px;
+        /* Adjust the width as needed */
+    }
+}
+
+/* Remove the border from the search button */
+.btn-outline-success {
+    border: none;
+    /* Removes the border */
+}
+
+/* Container for search input and icon */
+.search-container {
+    position: relative;
+    width: 100%;
+    /* Adjust based on the layout */
+}
+
+/* Search input styling */
+.search-input {
+    padding-left: 35px;
+    /* Add padding to make space for the icon */
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+/* Position the icon inside the input field */
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    /* Position on the left inside the input */
+    transform: translateY(-50%);
+    color: #D96A9E;
+    /* Optional: change the icon color */
+    pointer-events: none;
+    /* Make sure the icon doesn't interfere with typing */
+}
+
+.navbar-toggler:hover {
+    background-color: #EBEBEB;
+}
+
+.clearfix {
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+.carousel-tabs-wrapper {
+    box-sizing: border-box;
+    border: 1px solid blue;
+}
+
+.row {
+    box-sizing: border-box;
+    border: 1px solid green;
+}
+
+.nav-item {
+    box-sizing: border-box;
+    border: 1px solid black
+}
